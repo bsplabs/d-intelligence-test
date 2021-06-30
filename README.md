@@ -9,15 +9,16 @@
 
 ## เริ่มต้นโปรเจค
 
-ก่อนทำการรันคำสั่งต่างๆ ให้ทำการสร้าง database เสร็จเเล้วนำชื่อ DB และ Password DB ไปวางใว้ในไฟล์ .env เเล้วรันคำสั่งตามข้างล่างนี้
+ก่อนทำการรันคำสั่งต่างๆ ให้ทำการสร้าง database เสร็จเเล้วนำชื่อ DB และ Password DB ไปวางใว้ในไฟล์ .env (ถ้ายังไม่มี .env ก็สร้างใหม่ จาก .env.example) เเล้วรันคำสั่งตามข้างล่างนี้
 
 - `composer install`
+- `php artisan key:generate`
 - `php artisan migrate --seed`
 - `php artisan passport:install`
 
 
 
-### ทดสอบหน้าเเสดงผลจังหวัด
+### ทดสอบหน้าเเสดงผลจังหวัด (Create, Update, Ddelete)
 
 - เข้าไปที่ `<scheme>://<hostname>[:<port>]` เช่น `https://bsplabs.com/`
 
