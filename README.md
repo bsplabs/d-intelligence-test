@@ -27,8 +27,8 @@
 
 - `<scheme>://<hostname>[:<port>]/api/register`
 
-body request
-```
+  body request
+  ```
   {
     "name": "Your Name",
     "email": "Your Email",
@@ -38,24 +38,24 @@ body request
 
 - `<scheme>://<hostname>[:<port>]/api/login`
 
-body request
-```
-  {
-    "email": "Your Email",
-    "password": "Your Password"
-  }
-```
+  body request
+  ```
+    {
+      "email": "Your Email",
+      "password": "Your Password"
+    }
+  ```
 
-เมื่อทำการ Login เเล้วจะมีการ Response --> access_token กลับมาให้ โดยจะทำไปทดสอบดึง Provinces ในลำดับถัดไป
+  เมื่อทำการ Login เเล้วจะมีการ Response --> access_token กลับมาให้ โดยจะทำไปทดสอบดึง Provinces ในลำดับถัดไป
 
 - `<scheme>://<hostname>[:<port>]/api/logout`
 
-ในการ Logout ไม่ต้องแนบข้อมูล แต่ต้องเพิ่ม Authorization: `Bearer <access_token>` เพื่อนำ token ไปทำการ revoke ที่ Backend 
+  ในการ Logout ไม่ต้องแนบข้อมูล แต่ต้องเพิ่ม Authorization: `Bearer <access_token>` เพื่อนำ token ไปทำการ revoke ที่ Backend 
 
 
 ### ทดสอบระบบดึง Provinces
 
-โดยจะต้องทำการ authenticated ก่อน เพื่อให้ได้ access_token ในการเข้าถึง resources
+  โดยจะต้องทำการ authenticated ก่อน เพื่อให้ได้ access_token ในการเข้าถึง resources
 
 - `<scheme>://<hostname>[:<port>]/api/provinces`
 - `<scheme>://<hostname>[:<port>]/api/provinces/{id}`
